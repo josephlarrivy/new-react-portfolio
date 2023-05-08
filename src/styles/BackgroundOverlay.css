@@ -1,0 +1,65 @@
+#background-overlay-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.bubble-purple {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+
+    margin: 0 10px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px #6e47dd;
+    animation: animate;
+    animation-iteration-count: infinite;
+}
+
+.bubble-pink {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+
+    margin: 0 10px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px #ae2d68;
+    animation: animate;
+    animation-iteration-count: infinite;
+}
+
+.bubble-peach {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+
+    margin: 0 10px;
+    background: white;
+    border-radius: 50%;
+    box-shadow: 0 0 20px 10px #f54952;
+    animation: animate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

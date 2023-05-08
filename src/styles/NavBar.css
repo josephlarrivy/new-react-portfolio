@@ -1,0 +1,17 @@
+#nav-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+#nav-main p {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 0;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
