@@ -1,0 +1,1 @@
+https://digitalsynopsis.com/wp-content/uploads/2019/11/color-schemes-palettes-3.png

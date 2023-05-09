@@ -47,15 +47,16 @@ const App = () => {
 
   useEffect(() => {
     const navHeight = document.querySelector('nav').offsetHeight;
-    document.body.style.paddingTop = `${navHeight}px`;
+    document.body.style.paddingTop = `${navHeight - 5 }px`;
   }, []);
 
   return (
     <div id='main-container'>
 
         <BackgroundOverlay />
-
-        <NavBar setActiveSection={setActiveSection} />
+        <div id='navbar-app-container'>
+          <NavBar setActiveSection={setActiveSection} />
+        </div>  
 
         <div ref={homeRef} className='section-background' >
           <Home />

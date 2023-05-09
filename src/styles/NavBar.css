@@ -5,6 +5,8 @@
     right: 0;
     display: flex;
     justify-content: space-around;
+    background-color: rgba(0,0,0);
+    height: 40px;
 }
 
 #nav-main p {

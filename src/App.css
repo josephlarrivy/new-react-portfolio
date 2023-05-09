@@ -13,6 +13,10 @@
   padding-top: 5vh;
 }
 
+#navbar-app-container {
+  /* z-index: 5; */
+}
+
 .clear-section-separate {
   height: 30vh;
 }

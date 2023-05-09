@@ -7,7 +7,7 @@ const Education = () => {
   const [titleBubblesEducationState, setTitleBubblesEducationState] = useState('closed')
 
   const setOpenInfo = (e) => {
-    console.log(e.target.innerHTML)
+    console.log(e.target.textContent)
     if (titleBubblesEducationState === 'open') {
       setTitleBubblesEducationState('closed')
     } else {
@@ -40,7 +40,7 @@ const Education = () => {
 
         <div className={`content-education-container-${titleBubblesEducationState}`}>
           <div className="education-content-springboard">
-
+            
           </div>
           <div className="education-content-uws">
 
