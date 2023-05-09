@@ -8,13 +8,18 @@
 }
 
 .section-background {
-      background: linear-gradient(to bottom, #422680, #660f56, #ae2d68);
+  background: linear-gradient(to bottom, #422680, #660f56, #ae2d68);
   height: 100vh;
   padding-top: 5vh;
+  z-index: 1;
 }
 
 #navbar-app-container {
-  /* z-index: 5; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
 }
 
 .clear-section-separate {

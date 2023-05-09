@@ -48,12 +48,23 @@ const App = () => {
   useEffect(() => {
     const navHeight = document.querySelector('nav').offsetHeight;
     document.body.style.paddingTop = `${navHeight - 5 }px`;
+
+    const disableArrowKeyScrolling = (e) => {
+      if (["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].indexOf(e.code) > -1) {
+        e.preventDefault();
+      }
+    };
+    document.addEventListener("keydown", disableArrowKeyScrolling, false);
+    return () => {
+      document.removeEventListener("keydown", disableArrowKeyScrolling, false);
+    };
   }, []);
 
   return (
     <div id='main-container'>
 
         <BackgroundOverlay />
+
         <div id='navbar-app-container'>
           <NavBar setActiveSection={setActiveSection} />
         </div>  

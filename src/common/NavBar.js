@@ -4,7 +4,7 @@ const NavBar = (props) => {
 
   const handleClick = (section) => {
     props.setActiveSection(section);
-    console.log(section)
+    // console.log(section)
   };
 
   return (
