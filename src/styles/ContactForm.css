@@ -44,3 +44,10 @@ label {
     margin-left: calc(50% - 60px);
     margin-top: 20px;
 }
+
+.submit-button-contact:hover {
+    background-color: white;
+    width: 120px;
+    margin-left: calc(50% - 60px);
+    margin-top: 20px;
+}

@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
-import BackgroundOverlay from "../common/BackgroundOverlay";
 
 import '../styles/Education.css'
 
 const Education = () => {
 
   const [displayState, setDisplayState] = useState('closed')
-  const [pointerbarMarginTop, setPointerbarMarginTop] = useState('40px')
   const [currentDescription, setCurrentDescription] = useState(
     {
       title: '',
@@ -15,16 +13,6 @@ const Education = () => {
       additional: ''
     }
   )
-
-  useEffect(() => {
-    if (currentDescription.title === 'Springboard') {
-      setPointerbarMarginTop('50px')
-    } else if (currentDescription.title === 'University of Wisconsin-Superior') {
-      setPointerbarMarginTop('220px')
-    } else if (currentDescription.title === 'Community College of Aurora') {
-      setPointerbarMarginTop('390px')
-    }
-  }, [currentDescription])
 
   const setOpenInfo = (input) => {
     console.log(input)
@@ -56,7 +44,7 @@ const Education = () => {
     {
       title: 'Springboard',
       description: 'Voted best online bootcamp by Course Report in 2019, 2020, and 2021, Springboard\'s Software Engineering track provides a full-stack education. This 800-hour program covers front-end web development, back-end web development, databases, data structures and algorithms. I am glad that I chose Springboard to kickstart my software engineering career.',
-      focus: 'Software Engineering',
+      focus: 'Track: Software Engineering',
       additional: 'Topics: JavaScript, Python, Flask, Postgres, Express, Node, React, Data Structures, Algorithms'
     };
 
@@ -72,8 +60,8 @@ const Education = () => {
     {
       title: 'Community College of Aurora',
     description: 'The Community College of Aurora (CCA) is a public community college located in Aurora, Colorado. Founded in 1984, it offers a range of associate degrees and certificate programs in fields such as business, health sciences, and technology. CCA is committed to providing affordable, accessible education and workforce training to the diverse communities it serves.',
-      focus: 'Biology',
-      additional: ['Honors: Phi Theta Kappa, President\'s list']
+      focus: 'Degree: Biology',
+      additional: 'Honors: Phi Theta Kappa, President\'s list'
     };
 
   return (

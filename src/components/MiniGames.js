@@ -14,7 +14,7 @@ const MiniGames = () => {
   if (showProject === 'home') {
     return(
       <div id="minigames-none-open-container">
-        <h1>MiniGames</h1>
+        <h1>miniGames</h1>
         <button onClick={() => {setShowProject('snake')}}>Play Snake</button>
         <br></br>
         <button onClick={() => { setShowProject('gameOfLife') }}>Play Conways's Game of Life</button>
