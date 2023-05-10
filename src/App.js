@@ -69,7 +69,7 @@ const App = () => {
           <NavBar setActiveSection={setActiveSection} />
         </div>  
 
-        <div ref={homeRef} className='section-background' >
+        <div ref={homeRef} className='section-background-home' >
           <Home />
         </div>
         <div className='clear-section-separate'/>

@@ -14,6 +14,13 @@
   z-index: 1;
 }
 
+.section-background-home {
+  background: linear-gradient(to bottom, #422680, #660f56, #ae2d68);
+  height: 100vh;
+  padding-top: 2vh;
+  z-index: 1;
+}
+
 #navbar-app-container {
   position: fixed;
   top: 0;

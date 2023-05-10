@@ -72,6 +72,18 @@ const Projects = () => {
       <div id="education-container">
 
 
+        <div className={`content-education-container-${displayState}`}>
+          <div className="education-content-text">
+            <h2>{currentDescription.title}</h2>
+            <p>{currentDescription.description}</p>
+            <p>{currentDescription.focus}</p>
+            <p>{currentDescription.additional}</p>
+            <br></br>
+            <button className={`simple-button-dark-${displayState}`} onClick={() => window.open(currentDescription.link)}>Visit Site</button>
+            <button className={`simple-button-dark-${displayState}`} onClick={() => closeViewer()}>Close</button>
+          </div>
+        </div>
+
 
         <div className={`title-bubbles-container`}>
           <div
@@ -92,17 +104,7 @@ const Projects = () => {
         </div>
 
 
-        <div className={`content-education-container-${displayState}`}>
-          <div className="education-content-text">
-            <h2>{currentDescription.title}</h2>
-            <p>{currentDescription.description}</p>
-            <p>{currentDescription.focus}</p>
-            <p>{currentDescription.additional}</p>
-            <br></br>
-            <button className={`simple-button-dark-${displayState}`} onClick={() => window.open(currentDescription.link)}>Visit Site</button>
-            <button className={`simple-button-dark-${displayState}`} onClick={() => closeViewer()}>Close</button>
-          </div>
-        </div>
+        
 
       </div>
     </div>

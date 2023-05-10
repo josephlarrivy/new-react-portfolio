@@ -30,7 +30,7 @@ function GameOfLife({setShowProject}) {
   }
 
   const handleAppClick = () => { setStep(true) }
-  const exit = () => {setShowProject('home')}
+  const exit = () => { setShowProject('gameOfLifeInstructions')}
 
   const reset = () => {
     const doReset = () => {

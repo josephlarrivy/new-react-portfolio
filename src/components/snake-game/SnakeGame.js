@@ -70,7 +70,7 @@ function SnakeGame({ setShowProject }) {
     setTable(newTable)
     setSnakeBody(newBody)
     if (newBody === 0) {
-      setShowProject('home')
+      setShowProject('snakeInstructions')
     }
     if (JSON.stringify(newBody[1]) == JSON.stringify(appleRef.current)) {
       let newApple = moveApple(newBody)
@@ -82,7 +82,6 @@ function SnakeGame({ setShowProject }) {
 
   return (
     <div className="App">
-      <p style={{color: 'white'}} >Use the arrow keys to control the snake. Gather apples to increase snake length. Running into sides of board or snake body will result in game over.</p>
       <button className="exit-button" onClick={exit}><b>Exit</b></button>
       <Board table={table} setShowProject={setShowProject}/>
     </div>
