@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import BackgroundOverlay from "../common/BackgroundOverlay";
 
 import '../styles/Education.css'
 
@@ -30,8 +31,6 @@ const Education = () => {
     if (displayState === 'closed') {
       setCurrentDescription(input)
       setDisplayState('open')
-    } else if (currentDescription === input) {
-      setDisplayState('closed')
     } else if (displayState === 'open' && currentDescription !== input) {
       setDisplayState('closed')
       setTimeout(() => {
@@ -80,15 +79,12 @@ const Education = () => {
   return (
     <div id="education-main-container">
       <h1>Education</h1>
+      
       <div id="education-container">
 
-        <div
-          className={`pointer-bar-education-one-${displayState}`}
-          style={{
-            marginTop: pointerbarMarginTop
-          }} />
 
-        <div className={`title-bubbles-container-${displayState}`}>
+
+        <div className={`title-bubbles-container`}>
           <div
             className="title-bubble"
             onClick={(e) => { setOpenInfo(springboardDescription) }}>
@@ -105,7 +101,6 @@ const Education = () => {
             <p>{titles[2]}</p>
           </div>
         </div>
-
         
 
         <div className={`content-education-container-${displayState}`}>
@@ -115,7 +110,7 @@ const Education = () => {
             <p>{currentDescription.focus}</p>
             <p>{currentDescription.additional}</p>
             <br></br>
-            <button className="simple-button" onClick={() => closeViewer()}>Close</button>
+            <button className={`simple-button-dark-${displayState}`} onClick={() => closeViewer()}>Close</button>
           </div>
         </div>
 

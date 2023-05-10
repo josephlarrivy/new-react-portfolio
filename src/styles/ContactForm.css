@@ -1,0 +1,46 @@
+.form-container {
+    /* background-color: white; */
+    width: 500px;
+    margin-left: calc(50vw - 250px);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.name-container input {
+    border-radius: 10px;
+    font-size: 30px;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.email-container input {
+    border-radius: 10px;
+    font-size: 30px;
+    width: 500px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.message-container textarea {
+    border-radius: 10px;
+    font-size: 20px;
+    width: 500px;
+    height: 200px;
+}
+
+label {
+    color: white;
+    font-size: 25px;
+}
+
+.submit-button-contact {
+    background-color: white;
+    width: 120px;
+    margin-left: calc(50% - 60px);
+    margin-top: 20px;
+}

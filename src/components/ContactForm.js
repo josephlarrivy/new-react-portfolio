@@ -2,7 +2,8 @@ import { useState } from "react";
 // import ApiRequest from "../../api";
 import emailjs from 'emailjs-com';
 
-// import './ContactForm.css'
+import '../styles/ContactForm.css'
+import { useNavigate } from "react-router-dom";
 
 const ContactForm = () => {
 
@@ -13,7 +14,6 @@ const ContactForm = () => {
   }
 
   const [formData, setFormData] = useState(INITIAL_STATE)
-  // const navigate = useNavigate();
 
   const handleChange = evt => {
     const { name, value } = evt.target;
@@ -26,13 +26,12 @@ const ContactForm = () => {
   const handleSubmit = async (evt) => {
     evt.preventDefault();
     emailjs.sendForm('service_yfh2nmo', 'template_8xoo1dd', evt.target, 'dOwl-x9RcwhboytS1')
-    
     setFormData(INITIAL_STATE)
   }
 
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className='form-container'>
 
       <div className="name-container">
         <label htmlFor="name" className="col-md-6">Name: </label>
@@ -77,7 +76,7 @@ const ContactForm = () => {
       </div>
 
 
-      <button className="submit-button">Submit</button>
+      <button className="submit-button-contact">Submit</button>
     </form>
   )
 }
