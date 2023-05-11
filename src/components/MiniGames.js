@@ -17,7 +17,7 @@ const MiniGames = () => {
         <h1>miniGames</h1>
         <button onClick={() => {setShowProject('snakeInstructions')}}>Play Snake</button>
         <br></br>
-        <button onClick={() => { setShowProject('gameOfLifeInstructions') }}>Play Conways's Game of Life</button>
+        <button onClick={() => { setShowProject('gameOfLifeInstructions') }}>Play Conway's Game of Life</button>
       </div>
     )
   } else if (showProject === 'snakeInstructions') {
