@@ -103,12 +103,12 @@ const Projects = () => {
           </div>
           <div
             className="title-bubble"
-            onClick={(e) => { setOpenInfo(nasaDescription) }}>
+            onClick={(e) => { setOpenInfo(parkDescription) }}>
             <p>{titles[1]}</p>
           </div>
           <div
             className="title-bubble"
-            onClick={(e) => { setOpenInfo(parkDescription) }}>
+            onClick={(e) => { setOpenInfo(nasaDescription) }}>
             <p>{titles[2]}</p>
           </div>
           <div
