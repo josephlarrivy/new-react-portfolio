@@ -43,7 +43,7 @@ const Projects = () => {
   {
     title: 'ChirpHub',
     description: 'Built as a lightweight Twitter clone, users can chirp, like, comment, tag, and use many other features that Twitter allows.',
-    focus: 'Technology: React, Python, PSQL',
+    focus: 'Technology: React, Python/Flask, PSQL',
     additional: '',
     link: 'https://chirphub-client.herokuapp.com/'
   };
@@ -52,7 +52,7 @@ const Projects = () => {
   {
     title: 'Park Explorer Pro',
     description: 'Built on the United States National Park Service API, explore United States National Parks. Find parks, campsites, visitor centers, activities, events, and more. Create trips and add parks, events and things to do as you plan your next adventure.',
-    focus: 'Technology: React',
+    focus: 'Technology: React, Node/Express, PSQL',
     additional: 'APIs: National Parks Service',
     link: 'https://parkexplorerpro-client.herokuapp.com/'
   };
@@ -70,7 +70,7 @@ const Projects = () => {
   {
     title: 'Marvel',
     description: 'Built on Marvel Comics\' API, collect, comment, like, and share your favorite Marvel comics, issues, series, and characters.',
-    focus: 'Technology: Python, Flask, Jinja, Postgres',
+    focus: 'Technology: Python/Flask, Jinja, PSQL',
     additional: 'APIs: Marvel Comics',
     link: 'https://springboard-capstone-marvel.herokuapp.com/home'
   };
