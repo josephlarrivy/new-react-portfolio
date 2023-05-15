@@ -33,10 +33,29 @@ const Projects = () => {
   }
 
   const titles = [
-    'NASA Exploration',
+    'ChirpHub',
     'Park Explorer Pro',
+    'NASA Exploration',
     'Marvel'
   ]
+
+  const chirphubDescription =
+  {
+    title: 'ChirpHub',
+    description: 'Built as a lightweight Twitter clone, users can chirp, like, comment, tag, and use many other features that Twitter allows.',
+    focus: 'Technology: React, Python, PSQL',
+    additional: '',
+    link: 'https://chirphub-client.herokuapp.com/'
+  };
+
+  const parkDescription =
+  {
+    title: 'Park Explorer Pro',
+    description: 'Built on the United States National Park Service API, explore United States National Parks. Find parks, campsites, visitor centers, activities, events, and more. Create trips and add parks, events and things to do as you plan your next adventure.',
+    focus: 'Technology: React',
+    additional: 'APIs: National Parks Service',
+    link: 'https://parkexplorerpro-client.herokuapp.com/'
+  };
 
   const nasaDescription =
   {
@@ -45,15 +64,6 @@ const Projects = () => {
     focus: 'Technology: React',
     additional: 'APIs: NASA, TLE',
     link: 'https://nasa-exploration.herokuapp.com/'
-  };
-
-  const parkDescription =
-  {
-    title: 'Park Explorer Pro',
-    description: 'Built on the United States National Park Service API, explore United States National Parks. Find parks, campsites, visitor centers, activities, events, and more.',
-    focus: 'Technology: React',
-    additional: 'APIs: National Parks Service',
-    link: 'https://parkexplorerpro-client.herokuapp.com/'
   };
 
   const marvelDescription =
@@ -88,18 +98,23 @@ const Projects = () => {
         <div className={`title-bubbles-container`}>
           <div
             className="title-bubble"
-            onClick={(e) => { setOpenInfo(nasaDescription) }}>
+            onClick={(e) => { setOpenInfo(chirphubDescription) }}>
             <p>{titles[0]}</p>
           </div>
           <div
             className="title-bubble"
-            onClick={(e) => { setOpenInfo(parkDescription) }}>
+            onClick={(e) => { setOpenInfo(nasaDescription) }}>
             <p>{titles[1]}</p>
           </div>
           <div
             className="title-bubble"
-            onClick={(e) => { setOpenInfo(marvelDescription) }}>
+            onClick={(e) => { setOpenInfo(parkDescription) }}>
             <p>{titles[2]}</p>
+          </div>
+          <div
+            className="title-bubble"
+            onClick={(e) => { setOpenInfo(marvelDescription) }}>
+            <p>{titles[3]}</p>
           </div>
         </div>
 
