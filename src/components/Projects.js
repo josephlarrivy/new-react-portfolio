@@ -53,7 +53,7 @@ const Projects = () => {
     title: 'Park Explorer Pro',
     description: 'Built on the United States National Park Service API, explore United States National Parks. Find parks, campsites, visitor centers, activities, events, and more. Create trips and add parks, events and things to do as you plan your next adventure.',
     focus: 'Technology: React, Node/Express, PSQL',
-    additional: 'APIs: National Parks Service',
+    additional: 'APIs: developer.nps.gov, sunrise-sunset.org, openweathermap.org',
     link: 'https://parkexplorerpro-client.herokuapp.com/'
   };
 
