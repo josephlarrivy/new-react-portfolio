@@ -60,7 +60,7 @@ const Projects = () => {
   const nasaDescription =
   {
     title: 'NASA Exploration',
-    description: 'Built on NASA\'s API, explore our solar system\'s planets, learn about NASA\'s Spacecraft, track satelites, learn about the Artemis and Apollo missions, and much more.',
+    description: 'Built on NASA\'s API, explore our solar system\'s planets, learn about NASA\'s Spacecraft, track satellites, learn about the Artemis and Apollo missions, and much more.',
     focus: 'Technology: React',
     additional: 'APIs: NASA, TLE',
     link: 'https://nasa-exploration.herokuapp.com/'
